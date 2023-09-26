@@ -1,0 +1,167 @@
+.navbar {
+  align-items: center;
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1em;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: linear-gradient(to right, #ff6600, rgb(255, 191, 0));
+  padding-right: 40px;
+  height: 74px;
+}
+
+.navbar-top-start {
+  display: flex;
+  padding-left: 138px;
+  flex: 1;
+  /* Ocupa el espacio disponible */
+}
+
+.navbar-bottom-start {
+  display: flex;
+  flex: 1;
+}
+
+.navbar-top-start a,
+.navbar-bottom-start a {
+  color: #ffffffd4;
+  column-gap: 0.25em;
+  font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+}
+
+
+.navbar-top-end {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 0.05em;
+  align-items: center;
+  padding-right: 0.75em;
+}
+
+.navbar-bottom-end {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1em;
+  align-items: center;
+}
+
+
+.equipo,
+.red,
+.competicion {
+  border-radius: 50%;
+  /* Hace que los logos sean redondos */
+  overflow: hidden;
+  /* Asegura que los logos no se desborden */
+  width: 40px;
+  /* Ancho de cada logo */
+  height: 40px;
+  /* Altura de cada logo */
+  background-color: white;
+  /* Color de fondo del logo (puede ser transparente si lo deseas) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px;
+  /* Espaciado entre los logos */
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: normal;
+}
+
+.options:hover {
+  color: white;
+}
+
+.logo-equipo,
+.logo-competicion {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.logo-red {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.logo-red:hover,
+.logo-equipo:hover,
+.logo-competicion:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.logo-main {
+  width: auto;
+  height: 96px;
+}
+
+.logo-p {
+  height: 52px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-button {
+  font-size: 12px;
+  padding: 0.7em 1em;
+  letter-spacing: 0.05em;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1em;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  box-shadow: white;
+  align-items: center;
+  display: flex;
+  column-gap: 1em;
+  justify-content: center;
+}
+
+.navbar-button::before:hover{
+  --navbar-color: transparent;
+}
+
+.navbar-button:hover {
+  background-color: #ff7300;
+  cursor: pointer;
+}
+
+.icon-button {
+  width: 25px;
+  height: 25px;
+  filter: invert(100%);
+}
+
+/* CSS */
+@font-face {
+  font-family: 'Archivo Black'; /* Nombre de la fuente que utilizarás en tu proyecto */
+  src: url('fonts/ArchivoBlack-Regular.ttf') format('truetype'); /* Ruta relativa al archivo de fuente */
+  /* Otras propiedades de fuente si es necesario, como weight, style, etc. */
+}
